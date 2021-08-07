@@ -3,8 +3,6 @@ package Person;
 import java.util.ArrayList;
 
 public interface IPerson {
-  // FIELDS
-
   // Get personal ID
   long getPersonalID();
 
@@ -18,14 +16,13 @@ public interface IPerson {
   
   // If the person had contact with confirmed/possible patient
   boolean isConfirmed();
-  boolean isPossible();
 
   // Get list of current have/n't symptoms
   ArrayList<Boolean> getSymptoms();
 
   // Current states
   // Get vaccination statue (n - None, 1 - one dose, f - fully vaccinated)
-  char getVaccFlag();
+  boolean isFullyVaccinated();
 
   // Get under quarantine or not
   boolean isQuarantine();
@@ -41,11 +38,9 @@ public interface IPerson {
   // Get person gender
   boolean getGender();
 
-  // METHOD
-
-  // getters
-  // ?contactPatients
-  // ?beenToDangerousCities
-
-  // level of access to different activities
+  // Update the travel history of past 14 days
+  void updateHistory();
+  
+  //Get the possibility of Covid-19 diagnosis result
+  double getDiagnosis();
 }
