@@ -30,12 +30,14 @@ class Address {
 }
 
 // To represent common attributes to monitor an individual
-public class Person {
+public class SimplePerson {
   // Name components
   String last;
   String first;
   // Passed cities in the past 2 weeks
   ArrayList<Address> trip;
+  // List of current have/n't symptoms
+  ArrayList<Boolean> symptoms;
   // Current states
   // Vaccination statue (n - None, 1 - one dose, f - fully vaccinated)
   char vaccFlag;
@@ -50,8 +52,8 @@ public class Person {
   boolean gender;
 
   // The constructor
-  Person(String last, String first, ArrayList<Address> trip, char vaccFlag, boolean quarantine,
-      boolean testResult, int age, boolean gender) {
+  SimplePerson(String last, String first, ArrayList<Address> trip, char vaccFlag,
+      boolean quarantine, boolean testResult, int age, boolean gender) {
     this.last = last;
     this.first = first;
     this.trip = trip;
@@ -60,5 +62,10 @@ public class Person {
     this.testResult = testResult;
     this.age = age;
     this.gender = gender;
+  }
+  
+  // Update the traveled city list
+  void updateTrip() {
+    
   }
 }
