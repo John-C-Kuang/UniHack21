@@ -80,12 +80,27 @@ public class SimplePerson implements IPerson {
   // Covid-19 test result in the past 5 days (Positive/Negative, NULL)
   boolean testResult;
   // Physical attributes
-  // float BMI;
-  int age;
+    // String HealthCondition; (高血压/既往慢性病史..); 用于      
+    // float BMI;
+    int age;
+  
   // True - male, False - female
   boolean gender;
 
   // The constructor
+   /**
+   * 定义一个人对象，人对象包含个人的基本信息，生理状况及旅行记录，用于预测其危险系数
+   * 
+   * @param last        姓
+   * @param first       名
+   * @param age         年龄
+   * @param trip        旅行记录
+   * @param symptons    症状
+   * @param vaccFlag    疫苗接种情况
+   * @param quarantine  是否正在隔离
+   * @param testResult  检测记录
+   * 
+   */
   SimplePerson(long id, String last, String first, ArrayList<Address> travelHistory,
       ArrayList<Boolean> symptoms, char vaccFlag, boolean quarantine, boolean testResult, int age,
       boolean gender) {
