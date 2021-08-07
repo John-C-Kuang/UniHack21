@@ -3,6 +3,7 @@ package Person;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.io.File;
 
 // To represent the tracking state of a passed location
 class Address {
@@ -85,12 +86,12 @@ public class SimplePerson implements IPerson {
   private int age;
 
   // True - male, False - female
-  private boolean gender;
+  private String gender;
 
   // The constructor
   SimplePerson(long id, String last, String first, ArrayList<Address> travelHistory,
       boolean confirmed, ArrayList<Boolean> symptoms, boolean fullVacc, boolean quarantine,
-      boolean testResult, int age, boolean gender) {
+      boolean testResult, int age, String gender) {
     this.id = id;
     this.last = last;
     this.first = first;
@@ -104,7 +105,7 @@ public class SimplePerson implements IPerson {
     this.gender = gender;
   }
 
-//Get personal ID
+  //Get personal ID
   public long getPersonalID() {
     return this.id;
   }
@@ -157,7 +158,7 @@ public class SimplePerson implements IPerson {
 
   // True - male, False - female
   // Get person gender
-  public boolean getGender() {
+  public String getGender() {
     return this.gender;
   }
 
@@ -211,34 +212,59 @@ public class SimplePerson implements IPerson {
     double pos;
     // Negative result from Naive Baysian
     double neg;
-    
+
     if (confirmed) {
       pos = Reference.PR_POS_CONFIRM;
       neg = Reference.PR_NEG_CONFIRM;
-    }
-    else {
+    } else {
       pos = Reference.PR_POS_POSSIBLE;
       neg = Reference.PR_NEG_POSSIBLE;
     }
-    
+
     for (int i = 0; i < this.symptoms.size(); i++) {
       if (this.symptoms.get(i)) {
         pos *= Reference.PR_POS_SYMPTOMS.get(i);
         neg *= 1 - Reference.PR_NEG_SYMPTOMS.get(i);
-      }
-      else {
+      } else {
         pos *= 1 - Reference.PR_POS_SYMPTOMS.get(i);
         neg *= Reference.PR_NEG_SYMPTOMS.get(i);
       }
     }
-    
+
     double initialDiagnosis = pos / (pos + neg);
-    
+
     if (this.fullVacc) {
       return (1 - Reference.VACC_EFFICIENCY) * initialDiagnosis;
-    }
-    else {
+    } else {
       return initialDiagnosis;
     }
   }
+  
+  @Override
+  public String toString() {
+    return "Name" + getFirstname() + getLastname()
+          + "ID"  + getPersonalID()    
+          + "Age" + getAge()
+          + "Gender" + getGender()
+          + "testResult" + getTestResult()
+          + "vaccinated?" + isFullyVaccinated()
+        + "Symptons" + printArrList(getSymptoms())
+        + "Travel History" + printArrList(getTravelHistory());
+  }
+
+  public <T> String printArrList(ArrayList<T> printingArrList) {
+    String returnedString = "";
+    for (int i = 0; i < printingArrList.size(); i++) {
+      returnedString += printingArrList.get(i);
+    }
+    return returnedString;
+  }
+
+  public void writeToFile(IPerson person) throws Exception {
+    File file = new File("./personDataSet.csv");
+    File fileParent = file.getParentFile();
+    i
+
+  }
+
 }

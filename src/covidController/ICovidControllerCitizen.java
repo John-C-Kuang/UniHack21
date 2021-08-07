@@ -7,6 +7,6 @@ public interface ICovidControllerCitizen {
 
   boolean queryTravelPermission();
 
-  String checkTravelHistoory(IPerson person);
+  String checkTravelHistory(IPerson person);
 
 }

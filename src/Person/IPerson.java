@@ -36,7 +36,7 @@ public interface IPerson {
 
   // True - male, False - female
   // Get person gender
-  boolean getGender();
+  String getGender();
 
   // Update the travel history of past 14 days
   void updateHistory();
@@ -58,4 +58,7 @@ public interface IPerson {
  void setQuarantine();
  // Change if the person received Covid-19 test result
  void setResult(boolean result);
+
+
+ String toString();
 }
