@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24f9f5a8-5719-4db2-90a6-a42a672d1bbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/covidController/WritePersonToFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Func.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/IPerson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Reference.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/SimplePerson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/GUITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/GUITest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/IPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/SimplePerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/SimplePerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/AbstractRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/AbstractRegion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/IRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/IRegion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/SimpleRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/SimpleRegion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerCitizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerGovernment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelCitizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelGovernment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/gov/IGovernmentGUIView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/gov/IGovernmentGUIView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/SimplePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/SimplePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidController/ICovidControllerGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/ICovidControllerGovernment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerGovernment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelGovernment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +67,6 @@
     <configuration name="GUITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUITest" />
       <module name="UniHack21" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

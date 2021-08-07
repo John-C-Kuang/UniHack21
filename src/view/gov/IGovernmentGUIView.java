@@ -5,5 +5,10 @@ package view.gov;
  */
 public interface IGovernmentGUIView {
 
+  void showPopUp(String message) throws IllegalArgumentException;
+
+  void getNotified(String actionName);
+
+  String showInteractivePopup(String question);
 
 }

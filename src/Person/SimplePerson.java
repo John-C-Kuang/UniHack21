@@ -19,19 +19,19 @@ public class SimplePerson implements IPerson {
   private boolean confirmed;
   // List of current have/n't symptoms in sequence
   /*
-   * - Cough 
-   * - Fatigue 
-   * - Fever 
-   * - Myalgias 
-   * - Loss of taste 
-   * - Sore throat 
-   * - Loss of smell 
-   * - Diarrhea 
-   * - Chills/sweats 
-   * - Dyspnea 
-   * - Temperature > 38 C 
-   * - Headache 
-   * - Nasal congestion 
+   * - Cough
+   * - Fatigue
+   * - Fever
+   * - Myalgias
+   * - Loss of taste
+   * - Sore throat
+   * - Loss of smell
+   * - Diarrhea
+   * - Chills/sweats
+   * - Dyspnea
+   * - Temperature > 38 C
+   * - Headache
+   * - Nasal congestion
    * - Nonproductive cough
    */
   private List<Boolean> symptoms;
@@ -51,7 +51,7 @@ public class SimplePerson implements IPerson {
   private String gender;
 
   // The constructor
-  SimplePerson(long id, String last, String first, List<Address> travelHistory,
+  public SimplePerson(long id, String last, String first, List<Address> travelHistory,
       boolean confirmed, List<Boolean> symptoms, boolean fullVacc, boolean quarantine,
       boolean testResult, int age, String gender) {
     this.id = id;
@@ -124,36 +124,36 @@ public class SimplePerson implements IPerson {
     return this.gender;
   }
 
- //Add to travel history
- public void addLocation(Address that) {
-   this.travelHistory.add(that);
- }
- // Change if contacted with confirmed Covid-19 patient
- public void confirmedContact() {
-   this.confirmed = true;
- }
- // Change current symptoms for generating diagnosis
- public void setSymptoms(List<Boolean> symptoms) {
-   this.symptoms = symptoms;
- }
- // Change after fully vaccinated
- public void fullyVacced() {
-   this.fullVacc = true;
- }
- // Change if current quarantine status
- public void setQuarantine() {
-   if (this.quarantine) {
-     this.quarantine = false;
-   }
-   else {
-     this.quarantine = true;
-   }
- }
- // Change if the person received Covid-19 test result
- public void setResult(boolean result) {
-   this.testResult = result;
- }
-  
+  //Add to travel history
+  public void addLocation(Address that) {
+    this.travelHistory.add(that);
+  }
+  // Change if contacted with confirmed Covid-19 patient
+  public void confirmedContact() {
+    this.confirmed = true;
+  }
+  // Change current symptoms for generating diagnosis
+  public void setSymptoms(List<Boolean> symptoms) {
+    this.symptoms = symptoms;
+  }
+  // Change after fully vaccinated
+  public void fullyVacced() {
+    this.fullVacc = true;
+  }
+  // Change if current quarantine status
+  public void setQuarantine() {
+    if (this.quarantine) {
+      this.quarantine = false;
+    }
+    else {
+      this.quarantine = true;
+    }
+  }
+  // Change if the person received Covid-19 test result
+  public void setResult(boolean result) {
+    this.testResult = result;
+  }
+
   // Update the traveled city list by time
   public void updateHistory() {
     for (int i = 0; i < this.travelHistory.size(); i++) {
@@ -201,23 +201,27 @@ public class SimplePerson implements IPerson {
       return initialDiagnosis;
     }
   }
-  
+
   @Override
   public String toString() {
-    return "Name" + getLastname() + getFirstname() 
-          + "ID"  + getPersonalID()    
-          + "Age" + getAge()
-          + "Gender" + getGender()
-          + "testResult" + getTestResult()
-          + "vaccinated?" + isFullyVaccinated()
-        + "Symptons" + printArrList(getSymptoms())
+    return "Name: " + getLastname() + getFirstname() + "\n"
+        + "ID: "  + getPersonalID() + "\n"
+        + "Age: " + getAge() + "\n"
+        + "Gender: " + getGender() + "\n"
+        + "testResult: " + getTestResult() + "\n"
+        + "vaccinated?" + isFullyVaccinated() + "\n"
+        + "Symptons: " + printArrList(getSymptoms())
         + "\n";
   }
 
   public <T> String printArrList(List<T> printingArrList) {
     String returnedString = "";
     for (int i = 0; i < printingArrList.size(); i++) {
-      returnedString += printingArrList.get(i);
+      if (i != printingArrList.size() - 1) {
+        returnedString += printingArrList.get(i) + "->";
+      } else {
+        returnedString += printingArrList.get(i);
+      }
     }
     return returnedString;
   }

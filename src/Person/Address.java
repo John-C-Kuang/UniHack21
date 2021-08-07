@@ -42,4 +42,9 @@ public class Address {
       return "NOW";
     }
   }
+
+  @Override
+  public String toString() {
+    return location;
+  }
 }

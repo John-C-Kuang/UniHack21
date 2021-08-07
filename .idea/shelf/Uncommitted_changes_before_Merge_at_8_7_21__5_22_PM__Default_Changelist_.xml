@@ -1,0 +1,94 @@
+<changelist name="Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]" date="1628371326596" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Merge at 8/7/21, 5:22 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/view/gov/IGovernmentGUIView.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/view/gov/IGovernmentGUIView.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/IGovernmentGUIView.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidController/SimpleCovidControllerCitizen.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleCovidControllerCitizen.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidController/SimpleCovidControllerGovernment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleCovidControllerGovernment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidController/ICovidControllerCitizen.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidController/ICovidControllerCitizen.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/ICovidControllerCitizen.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/GUITest.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/GUITest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/GUITest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidController/ICovidControllerGovernment.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidController/ICovidControllerGovernment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/ICovidControllerGovernment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Person/Address.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Person/Address.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/Address.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleCovidModelGovernment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Region/SimpleRegion.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Region/SimpleRegion.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleRegion.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidModel/ICovidModelCitizen.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidModel/ICovidModelCitizen.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/ICovidModelCitizen.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidModel/ICovidModelGovernment.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidModel/ICovidModelGovernment.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/ICovidModelGovernment.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleCovidModelCitizen.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Region/IRegion.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Region/IRegion.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/IRegion.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Person/IPerson.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Person/IPerson.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/IPerson.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimpleGovernmentGUI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Person/SimplePerson.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Person/SimplePerson.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/SimplePerson.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/WritePersonToFile.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/WritePersonToFile.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/UniHack21/Region/AbstractRegion.class" />
+    <option name="AFTER_PATH" value="out/production/UniHack21/Region/AbstractRegion.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21,_5_22_PM_[Default_Changelist]/AbstractRegion.class" />
+  </binary>
+</changelist>

@@ -33,10 +33,10 @@ public class SimpleCovidModelGovernment implements ICovidModelGovernment {
       prs.add(p.getCovidProbability());
     }
 
-    for (int i = 100; i > 0; i-=10) {
-      answer = answer + "probability: " + Double.toString(i/100.0) + "  ->  " +
-              "numbers: " + count(prs, i / 100.0, (i - 10) / 100.0)
-      + "\\n";
+    for (int i = 100; i > 0; i -= 10) {
+      answer = answer + "probability: " + Double.toString(i / 100.0) + "  ->  " +
+          "\n" + "numbers: " + count(prs, i / 100.0, (i - 10) / 100.0)
+          + "\n";
     }
 
     return answer;

@@ -1,5 +1,7 @@
 package covidController;
 
+import view.gov.IGovernmentGUIView;
+
 public interface ICovidControllerGovernment {
     String queryPersonalTravelHistory(long id);
 
@@ -7,10 +9,12 @@ public interface ICovidControllerGovernment {
 
     String getCovidSituation();
 
+    void setView(IGovernmentGUIView view);
+
     void printTravelHistory(long id);
 
     void printCovidSituation();
 
-    void printPersonalInformation();
+    void printPersonalInformation(long id);
 
 }
