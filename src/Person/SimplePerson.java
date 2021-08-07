@@ -249,7 +249,6 @@ public class SimplePerson implements IPerson {
           + "testResult" + getTestResult()
           + "vaccinated?" + isFullyVaccinated()
         + "Symptons" + printArrList(getSymptoms())
-        + "Travel History" + printArrList(getTravelHistory())
         + "\n";
   }
 
@@ -259,5 +258,9 @@ public class SimplePerson implements IPerson {
       returnedString += printingArrList.get(i);
     }
     return returnedString;
+  }
+
+  public String travelHistoryToString() {
+    return "Name: " + getFirstname() + getLastname() + "Travel History: " + printArrList(getTravelHistory()) + "\n";
   }
 }

@@ -61,4 +61,6 @@ public interface IPerson {
 
 
  String toString();
+
+ String travelHistoryToString();
 }
