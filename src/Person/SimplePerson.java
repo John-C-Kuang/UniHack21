@@ -1,8 +1,9 @@
 package Person;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.List;
 import java.io.File;
 
 // To represent the tracking state of a passed location
@@ -52,7 +53,7 @@ public class SimplePerson implements IPerson {
   private String last;
   private String first;
   // Passed cities in the past 2 weeks
-  private ArrayList<Address> travelHistory;
+  private List<Address> travelHistory;
   // If have direct contact with confirmed/possible COVID-19 patient
   private boolean confirmed;
   // List of current have/n't symptoms in sequence
@@ -72,7 +73,7 @@ public class SimplePerson implements IPerson {
    * - Nasal congestion 
    * - Nonproductive cough
    */
-  private ArrayList<Boolean> symptoms;
+  private List<Boolean> symptoms;
   // Current states
   // If the person is fully vaccinated
   private boolean fullVacc;
@@ -89,8 +90,8 @@ public class SimplePerson implements IPerson {
   private String gender;
 
   // The constructor
-  SimplePerson(long id, String last, String first, ArrayList<Address> travelHistory,
-      boolean confirmed, ArrayList<Boolean> symptoms, boolean fullVacc, boolean quarantine,
+  SimplePerson(long id, String last, String first, List<Address> travelHistory,
+      boolean confirmed, List<Boolean> symptoms, boolean fullVacc, boolean quarantine,
       boolean testResult, int age, String gender) {
     this.id = id;
     this.last = last;
@@ -120,7 +121,7 @@ public class SimplePerson implements IPerson {
   }
 
   // Get travel history in the past 2 weeks
-  public ArrayList<Address> getTravelHistory() {
+  public List<Address> getTravelHistory() {
     return this.travelHistory;
   }
 
@@ -130,7 +131,7 @@ public class SimplePerson implements IPerson {
   }
 
   // Get list of current have/n't symptoms
-  public ArrayList<Boolean> getSymptoms() {
+  public List<Boolean> getSymptoms() {
     return this.symptoms;
   }
 
@@ -171,7 +172,7 @@ public class SimplePerson implements IPerson {
    this.confirmed = true;
  }
  // Change current symptoms for generating diagnosis
- public void setSymptoms(ArrayList<Boolean> symptoms) {
+ public void setSymptoms(List<Boolean> symptoms) {
    this.symptoms = symptoms;
  }
  // Change after fully vaccinated
@@ -242,7 +243,7 @@ public class SimplePerson implements IPerson {
   
   @Override
   public String toString() {
-    return "Name" + getFirstname() + getLastname()
+    return "Name" + getLastname() + getFirstname() 
           + "ID"  + getPersonalID()    
           + "Age" + getAge()
           + "Gender" + getGender()
@@ -252,7 +253,7 @@ public class SimplePerson implements IPerson {
         + "\n";
   }
 
-  public <T> String printArrList(ArrayList<T> printingArrList) {
+  public <T> String printArrList(List<T> printingArrList) {
     String returnedString = "";
     for (int i = 0; i < printingArrList.size(); i++) {
       returnedString += printingArrList.get(i);

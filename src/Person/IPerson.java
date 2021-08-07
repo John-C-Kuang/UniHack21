@@ -1,6 +1,6 @@
 package Person;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface IPerson {
   // Get personal ID
@@ -12,13 +12,13 @@ public interface IPerson {
   String getFirstname();
 
   // Get travel history in the past 2 weeks
-  ArrayList<Address> getTravelHistory();
+  List<Address> getTravelHistory();
   
   // If the person had contact with confirmed/possible patient
   boolean isConfirmed();
 
   // Get list of current have/n't symptoms
-  ArrayList<Boolean> getSymptoms();
+  List<Boolean> getSymptoms();
 
   // Current states
   // Get vaccination statue (n - None, 1 - one dose, f - fully vaccinated)
@@ -51,7 +51,7 @@ public interface IPerson {
  // Change if contacted with confirmed Covid-19 patient
  void confirmedContact();
  // Change current symptoms for generating diagnosis
- void setSymptoms(ArrayList<Boolean> symptoms);
+ void setSymptoms(List<Boolean> symptoms);
  // Change after fully vaccinated
  void fullyVacced();
  // Change if current quarantine status
