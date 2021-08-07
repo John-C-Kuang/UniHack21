@@ -45,26 +45,26 @@ public interface IPerson {
   double getDiagnosis();
   
   
-  // Setter
-  void setID(long id);
-
-  void setFirstName(String firstName);
-  
-  void setLastName(String lastName);
-
-  void setTravelHistory(ArrayList<Address> TravelHistory);
-
-  void setSympton(ArrayList<Boolean> symptons);
-
-  void setVaccFlag(Boolean fullVacc);
-
-  void setTestResult(Boolean testResult);
-
-  void setQuarantined(Boolean quarantined);
-
-  void setAge(int age);
-
-  void setGender(String gender);
-
-  void clear();
+//  // Setter
+//  void setID(long id);
+//
+//  void setFirstName(String firstName);
+//
+//  void setLastName(String lastName);
+//
+//  void setTravelHistory(ArrayList<Address> TravelHistory);
+//
+//  void setSympton(ArrayList<Boolean> symptons);
+//
+//  void setVaccFlag(Boolean fullVacc);
+//
+//  void setTestResult(Boolean testResult);
+//
+//  void setQuarantined(Boolean quarantined);
+//
+//  void setAge(int age);
+//
+//  void setGender(String gender);
+//
+//  void clear();
 }

@@ -1,2 +1,5 @@
-package view;public interface IUserView {
+package view.user;
+
+public interface IUserGUiView {
+
 }

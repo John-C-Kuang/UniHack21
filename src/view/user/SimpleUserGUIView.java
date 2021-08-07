@@ -1,2 +1,5 @@
-package view.user;public class SimpleUserGUIView {
+package view.user;
+
+public class SimpleUserGUIView {
+
 }
