@@ -1,16 +1,16 @@
 package covidController;
 
-import Person.IPerson;
-
 public interface ICovidControllerGovernment {
-    Long totalInfectionRate();
+    String queryPersonalTravelHistory(long id);
 
-    IPerson personTravelHistory(IPerson person);
+    String queryPersonalInformation(long id);
 
-    boolean setTravelPermission(IPerson person);
+    String getCovidSituation();
 
-    void addPerson(IPerson person);
+    void printTravelHistory(long id);
 
-    void delPerson(IPerson person);
-    
+    void printCovidSituation();
+
+    void printPersonalInformation(long id);
+
 }
