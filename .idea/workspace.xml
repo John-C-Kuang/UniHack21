@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24f9f5a8-5719-4db2-90a6-a42a672d1bbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UniHack21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UniHack21.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/IPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Region/SimpleRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Region/SimpleRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/user/IUserGUiView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user/IUserGUiView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628345099988</updated>
-      <workItem from="1628345102374" duration="2508000" />
+      <workItem from="1628345102374" duration="5365000" />
     </task>
     <servers />
   </component>

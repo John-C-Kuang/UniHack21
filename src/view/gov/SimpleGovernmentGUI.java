@@ -158,9 +158,9 @@ public class SimpleGovernmentGUI implements IGovernmentGUIView {
     exportInfectionReport.setActionCommand("export_infection_report_for_all");
     this.exportPanel.add(exportInfectionReport);
 
-    JButton exportIndividualInformationSummary = new JButton("感染报告 COVID-19 Infection Report");
+    JButton exportIndividualInformationSummary = new JButton("登记信息 Population Information");
     exportIndividualInformationSummary.addActionListener(this.controller);
-    exportIndividualInformationSummary.setActionCommand("export_infection_info_summary");
+    exportIndividualInformationSummary.setActionCommand("export_population_info_summary");
     this.exportPanel.add(exportIndividualInformationSummary);
 
     this.buttonPanel.add(this.exportPanel);
