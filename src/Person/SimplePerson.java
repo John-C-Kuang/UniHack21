@@ -59,5 +59,6 @@ public class Person {
     this.quarantine = quarantine;
     this.testResult = testResult;
     this.age = age;
+    this.gender = gender;
   }
 }
