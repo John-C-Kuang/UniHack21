@@ -1,5 +1,7 @@
 package covidModel;
 
+import Person.Address;
+import Person.IPerson;
 import Region.IRegion;
 
 import java.util.ArrayList;
@@ -7,11 +9,16 @@ import java.util.List;
 
 public interface ICovidModelCitizen extends ICovidModel {
 
-  void updateTravelHistory(ArrayList<IRegion> regions);
+  IPerson getPerson();
 
-  void updatePhysicalCondition(ArrayList<Boolean> info);
+  void updateTravelHistory(IRegion regions);
 
-  List<IRegion> queryTravelingHistory();
+  void updatePhysicalCondition(Boolean isQ, Boolean fullyV, Boolean isContact,
+                               List<Boolean> info);
+
+  List<Address> queryTravelingHistory();
 
   double getCovidProbability();
+
+  public void updatePr();
 }

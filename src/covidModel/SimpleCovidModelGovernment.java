@@ -1,5 +1,6 @@
 package covidModel;
 
+import Person.Address;
 import Person.IPerson;
 import Region.IRegion;
 
@@ -33,7 +34,6 @@ public class SimpleCovidModelGovernment implements ICovidModelGovernment {
     }
 
     for (int i = 100; i > 0; i-=10) {
-
       answer = answer + "probability: " + Double.toString(i/100.0) + "  ->  " +
               "numbers: " + count(prs, i / 100.0, (i - 10) / 100.0)
       + "\\n";
@@ -43,31 +43,27 @@ public class SimpleCovidModelGovernment implements ICovidModelGovernment {
   }
 
   @Override
-  public List<IRegion> queryTravelHistory(long id) {
-    /*
+  public List<Address> queryTravelHistory(long id) {
+
     for (IPerson p : nameList) {
-      if (p.queryID == id) {
-        return p.queryTravelHistory();
+      if (p.getPersonalID() == id) {
+        return p.getTravelHistory();
       }
     }
 
-    throw new IllegalArgumentException("Cannot find the person!"); */
-
-    return null;
+    throw new IllegalArgumentException("Cannot find the person!");
   }
 
   @Override
   public IPerson queryPersonalInformation(long id) {
-    /*
+
     for (IPerson p : nameList) {
-      if (p.queryID == id) {
+      if (p.getPersonalID() == id) {
         return p;
       }
     }
 
-    throw new IllegalArgumentException("Cannot find the person!"); */
-
-    return null;
+    throw new IllegalArgumentException("Cannot find the person!");
   }
 
   private int count(List<Double> prs, double upperBound, double lowerBound) {

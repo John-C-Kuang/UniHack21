@@ -1,10 +1,10 @@
 package covidModel;
 
+import Person.Address;
 import Person.IPerson;
 import Region.IRegion;
 
 import java.util.ArrayList;
-import java.util.IllegalFormatWidthException;
 import java.util.List;
 
 public class SimpleCovidModelCitizen implements ICovidModelCitizen {
@@ -18,59 +18,48 @@ public class SimpleCovidModelCitizen implements ICovidModelCitizen {
   }
 
   @Override
-  public void updateTravelHistory(ArrayList<IRegion> regions) {
-    /* if (this.person.isQuarantine) {
-    *    throw new IllegalStateException("The person is in quarantine!");
-    *  } */
+  public IPerson getPerson() {
+    return this.person;
+  }
 
-    if (regions == null) {
+  @Override
+  public void updateTravelHistory(IRegion region) {
+    if (this.person.isQuarantine()) {
+      throw new IllegalStateException("The person is in quarantine!");
+    }
+
+    if (region == null) {
       throw new IllegalArgumentException("No new travel history!!!");
     }
 
-    // this.person.updateTravelHistory(regions);
+    this.person.addLocation(new Address(region.getName()));
 
     updatePr();
   }
 
   @Override
-  public void updatePhysicalCondition(ArrayList<Boolean> info) {
-    // person.updatePhysicalCondition(info);
+  public void updatePhysicalCondition(Boolean isQ, Boolean fullyV, Boolean isContact,
+                                      List<Boolean> info) {
+    if (isQ) {
+      this.person.isQuarantine();
+    }
+
+    if (fullyV) {
+      this.person.fullyVacced();
+    }
+
+    if (isContact) {
+      this.person.confirmedContact();
+    }
+
+    person.setSymptoms(info);
 
     updatePr();
   }
 
-  public String queryMedicalAdvice() {
-    if (probability > 1.0) {
-      throw new IllegalArgumentException("Illegal data!!");
-    }
-
-    if (probability >= 0.9) {
-      return "";
-    } else if (probability >= 0.7) {
-
-    } else if (probability >= 0.5) {
-
-    } else if (probability >= 0.3) {
-
-    } else if (probability >= 0) {
-
-    }
-
-    throw new IllegalArgumentException("Probability cannot less than 0!!");
-  }
-
   @Override
-  public List<IRegion> queryTravelingHistory() {
-    // return person.queryTravelHistory;
-    return null;
-  }
-
-  public boolean queryTravelPermission() {
-    if (probability > 0.4) {
-      return false;
-    }
-
-    return true;
+  public List<Address> queryTravelingHistory() {
+    return person.getTravelHistory();
   }
 
   @Override
@@ -78,7 +67,7 @@ public class SimpleCovidModelCitizen implements ICovidModelCitizen {
     return this.probability;
   }
 
-  private void updatePr() {
-
+  public void updatePr() {
+    this.person.getDiagnosis();
   }
 }

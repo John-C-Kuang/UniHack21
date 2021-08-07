@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24f9f5a8-5719-4db2-90a6-a42a672d1bbb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/covidController/WritePersonToFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Func.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/IPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Reference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/SimplePerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -20,6 +26,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProjectId" id="1wPSa94AynsS11G25SfXC6Xf8Lv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,6 +41,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/covidController" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GUITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUITest" />
@@ -42,13 +54,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,11 +81,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628345099988</updated>
-      <workItem from="1628345102374" duration="5365000" />
+      <workItem from="1628345102374" duration="7364000" />
+      <workItem from="1628358799103" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

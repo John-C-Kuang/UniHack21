@@ -1,47 +1,10 @@
 package Person;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-
-// To represent the tracking state of a passed location
-class Address {
-  // Which location
-  String location;
-  // The format to represent the date
-  SimpleDateFormat format;
-  // Dates of coming and leaving
-  Date come;
-  Date leave;
-
-  // The constructor
-  Address(String location) {
-    this.location = location;
-    this.format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-    this.come = new Date();
-    this.leave = null;
-  }
-
-  // To call the function when leaving
-  void leave() {
-    this.leave = new Date();
-  }
-
-  // To get the date of coming
-  String getCome() {
-    return this.format.format(this.come);
-  }
-
-  // To get the date of leaving
-  String getLeave() {
-    if (this.leave != null) {
-      return this.format.format(this.leave);
-    }
-    else {
-      return "NOW";
-    }
-  }
-}
+import java.util.List;
+import java.io.File;
 
 // To represent common attributes to monitor an individual
 public class SimplePerson implements IPerson {
@@ -51,7 +14,7 @@ public class SimplePerson implements IPerson {
   private String last;
   private String first;
   // Passed cities in the past 2 weeks
-  private ArrayList<Address> travelHistory;
+  private List<Address> travelHistory;
   // If have direct contact with confirmed/possible COVID-19 patient
   private boolean confirmed;
   // List of current have/n't symptoms in sequence
@@ -71,7 +34,7 @@ public class SimplePerson implements IPerson {
    * - Nasal congestion 
    * - Nonproductive cough
    */
-  private ArrayList<Boolean> symptoms;
+  private List<Boolean> symptoms;
   // Current states
   // If the person is fully vaccinated
   private boolean fullVacc;
@@ -85,12 +48,12 @@ public class SimplePerson implements IPerson {
   private int age;
 
   // True - male, False - female
-  private boolean gender;
+  private String gender;
 
   // The constructor
-  SimplePerson(long id, String last, String first, ArrayList<Address> travelHistory,
-      boolean confirmed, ArrayList<Boolean> symptoms, boolean fullVacc, boolean quarantine,
-      boolean testResult, int age, boolean gender) {
+  SimplePerson(long id, String last, String first, List<Address> travelHistory,
+      boolean confirmed, List<Boolean> symptoms, boolean fullVacc, boolean quarantine,
+      boolean testResult, int age, String gender) {
     this.id = id;
     this.last = last;
     this.first = first;
@@ -104,7 +67,7 @@ public class SimplePerson implements IPerson {
     this.gender = gender;
   }
 
-//Get personal ID
+  //Get personal ID
   public long getPersonalID() {
     return this.id;
   }
@@ -119,7 +82,7 @@ public class SimplePerson implements IPerson {
   }
 
   // Get travel history in the past 2 weeks
-  public ArrayList<Address> getTravelHistory() {
+  public List<Address> getTravelHistory() {
     return this.travelHistory;
   }
 
@@ -129,7 +92,7 @@ public class SimplePerson implements IPerson {
   }
 
   // Get list of current have/n't symptoms
-  public ArrayList<Boolean> getSymptoms() {
+  public List<Boolean> getSymptoms() {
     return this.symptoms;
   }
 
@@ -157,7 +120,7 @@ public class SimplePerson implements IPerson {
 
   // True - male, False - female
   // Get person gender
-  public boolean getGender() {
+  public String getGender() {
     return this.gender;
   }
 
@@ -170,7 +133,7 @@ public class SimplePerson implements IPerson {
    this.confirmed = true;
  }
  // Change current symptoms for generating diagnosis
- public void setSymptoms(ArrayList<Boolean> symptoms) {
+ public void setSymptoms(List<Boolean> symptoms) {
    this.symptoms = symptoms;
  }
  // Change after fully vaccinated
@@ -211,34 +174,55 @@ public class SimplePerson implements IPerson {
     double pos;
     // Negative result from Naive Baysian
     double neg;
-    
+
     if (confirmed) {
       pos = Reference.PR_POS_CONFIRM;
       neg = Reference.PR_NEG_CONFIRM;
-    }
-    else {
+    } else {
       pos = Reference.PR_POS_POSSIBLE;
       neg = Reference.PR_NEG_POSSIBLE;
     }
-    
+
     for (int i = 0; i < this.symptoms.size(); i++) {
       if (this.symptoms.get(i)) {
         pos *= Reference.PR_POS_SYMPTOMS.get(i);
         neg *= 1 - Reference.PR_NEG_SYMPTOMS.get(i);
-      }
-      else {
+      } else {
         pos *= 1 - Reference.PR_POS_SYMPTOMS.get(i);
         neg *= Reference.PR_NEG_SYMPTOMS.get(i);
       }
     }
-    
+
     double initialDiagnosis = pos / (pos + neg);
-    
+
     if (this.fullVacc) {
       return (1 - Reference.VACC_EFFICIENCY) * initialDiagnosis;
-    }
-    else {
+    } else {
       return initialDiagnosis;
     }
+  }
+  
+  @Override
+  public String toString() {
+    return "Name" + getLastname() + getFirstname() 
+          + "ID"  + getPersonalID()    
+          + "Age" + getAge()
+          + "Gender" + getGender()
+          + "testResult" + getTestResult()
+          + "vaccinated?" + isFullyVaccinated()
+        + "Symptons" + printArrList(getSymptoms())
+        + "\n";
+  }
+
+  public <T> String printArrList(List<T> printingArrList) {
+    String returnedString = "";
+    for (int i = 0; i < printingArrList.size(); i++) {
+      returnedString += printingArrList.get(i);
+    }
+    return returnedString;
+  }
+
+  public String travelHistoryToString() {
+    return "Name: " + getFirstname() + getLastname() + "Travel History: " + printArrList(getTravelHistory()) + "\n";
   }
 }
