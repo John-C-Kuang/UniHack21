@@ -243,13 +243,13 @@ public class SimplePerson implements IPerson {
   
   @Override
   public String toString() {
-    return "Name" + getLastname() + getFirstname() + "/"
-          + "ID"  + getPersonalID() + "/"   
-          + "Age" + getAge() + "/"
-          + "Gender" + getGender() + "/"
-          + "testResult" + getTestResult() + "/"
-          + "vaccinated?" + isFullyVaccinated() + "/"
-        + "Symptons" + printArrList(getSymptoms())
+    return "Name: " + getLastname() + getFirstname() + "\n"
+          + "ID: "  + getPersonalID() + "\n"   
+          + "Age: " + getAge() + "\n"
+          + "Gender: " + getGender() + "\n"
+          + "testResult: " + getTestResult() + "\n"
+          + "vaccinated?" + isFullyVaccinated() + "\n"
+        + "Symptons: " + printArrList(getSymptoms())
         + "\n";
   }
 
