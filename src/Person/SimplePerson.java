@@ -249,7 +249,8 @@ public class SimplePerson implements IPerson {
           + "testResult" + getTestResult()
           + "vaccinated?" + isFullyVaccinated()
         + "Symptons" + printArrList(getSymptoms())
-        + "Travel History" + printArrList(getTravelHistory());
+        + "Travel History" + printArrList(getTravelHistory())
+        + "\n";
   }
 
   public <T> String printArrList(ArrayList<T> printingArrList) {
@@ -259,12 +260,4 @@ public class SimplePerson implements IPerson {
     }
     return returnedString;
   }
-
-  public void writeToFile(IPerson person) throws Exception {
-    File file = new File("./personDataSet.csv");
-    File fileParent = file.getParentFile();
-    i
-
-  }
-
 }
