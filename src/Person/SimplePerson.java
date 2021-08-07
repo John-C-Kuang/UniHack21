@@ -51,7 +51,7 @@ public class Person {
 
   // The constructor
   Person(String last, String first, ArrayList<Address> trip, char vaccFlag, boolean quarantine,
-      boolean testResult, int age) {
+      boolean testResult, int age, boolean gender) {
     this.last = last;
     this.first = first;
     this.trip = trip;
