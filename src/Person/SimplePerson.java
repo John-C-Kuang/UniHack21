@@ -161,6 +161,36 @@ public class SimplePerson implements IPerson {
     return this.gender;
   }
 
+ //Add to travel history
+ public void addLocation(Address that) {
+   this.travelHistory.add(that);
+ }
+ // Change if contacted with confirmed Covid-19 patient
+ public void confirmedContact() {
+   this.confirmed = true;
+ }
+ // Change current symptoms for generating diagnosis
+ public void setSymptoms(ArrayList<Boolean> symptoms) {
+   this.symptoms = symptoms;
+ }
+ // Change after fully vaccinated
+ public void fullyVacced() {
+   this.fullVacc = true;
+ }
+ // Change if current quarantine status
+ public void setQuarantine() {
+   if (this.quarantine) {
+     this.quarantine = false;
+   }
+   else {
+     this.quarantine = true;
+   }
+ }
+ // Change if the person received Covid-19 test result
+ public void setResult(boolean result) {
+   this.testResult = result;
+ }
+  
   // Update the traveled city list by time
   public void updateHistory() {
     for (int i = 0; i < this.travelHistory.size(); i++) {
