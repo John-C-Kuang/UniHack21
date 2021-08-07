@@ -1,4 +1,4 @@
-package databaseManager;
+package FileIO;
 
 import java.io.*;
 
@@ -27,6 +27,7 @@ public class DatabaseIO implements IDbManager {
     }
     catch (IOException e) {
       // Exception message
+      System.out.println("ERROR! CAN'T FIND FILE PATH.");
     }
 
     this.flag = flag;
@@ -42,6 +43,7 @@ public class DatabaseIO implements IDbManager {
     }
     catch (IOException e) {
       // Exception message
+      System.out.println("ERROR! CAN'T FIND FILE PATH.");
     }
   }
 
@@ -61,8 +63,10 @@ public class DatabaseIO implements IDbManager {
     }
     catch (IOException e) {
       // Exception message
+      System.out.println("ERROR! NAME NOT FOUND.");
     }
 
+    System.out.println("ERROR! FILE NOT FOUND.");
     return null;
   }
   
@@ -82,6 +86,7 @@ public class DatabaseIO implements IDbManager {
     }
     catch (IOException e) {
       // Exception message
+      System.out.println("ERROR! MATCHED ID NOT FOUND.");
     }
 
     return null;
@@ -97,6 +102,8 @@ public class DatabaseIO implements IDbManager {
     }
     catch (IOException e) {
       // Exception message
+      System.out.println("ERROR! NOT FOUND FILE PATH.");
+      e.printStackTrace();
     }
   }
 }

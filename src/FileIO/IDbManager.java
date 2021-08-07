@@ -1,4 +1,4 @@
-package databaseManager;
+package FileIO;
 
 public interface IDbManager {
   // Assignment the target file for database storage
