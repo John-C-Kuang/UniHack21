@@ -3,7 +3,6 @@ package Person;
 import java.util.ArrayList;
 
 public interface IPerson {
-  // GETTERS
   // Get personal ID
   long getPersonalID();
 
@@ -38,24 +37,25 @@ public interface IPerson {
   // True - male, False - female
   // Get person gender
   boolean getGender();
-  
-  // SETTERS
-  // Add to travel history
-  void addLocation(Address that);
-  // Change if contacted with confirmed Covid-19 patient
-  void confirmedContact();
-  // Change current symptoms for generating diagnosis
-  void setSymptoms(ArrayList<Boolean> symptoms);
-  // Change after fully vaccinated
-  void fullyVacced();
-  // Change if current quarantine status
-  void setQuarantine();
-  // Change if the person received Covid-19 test result
-  void setResult(boolean result);
-  
+
   // Update the travel history of past 14 days
   void updateHistory();
   
   //Get the possibility of Covid-19 diagnosis result
   double getDiagnosis();
+  
+  
+  // Setter
+ //Add to travel history
+ void addLocation(Address that);
+ // Change if contacted with confirmed Covid-19 patient
+ void confirmedContact();
+ // Change current symptoms for generating diagnosis
+ void setSymptoms(ArrayList<Boolean> symptoms);
+ // Change after fully vaccinated
+ void fullyVacced();
+ // Change if current quarantine status
+ void setQuarantine();
+ // Change if the person received Covid-19 test result
+ void setResult(boolean result);
 }
