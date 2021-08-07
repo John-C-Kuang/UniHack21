@@ -2,11 +2,11 @@ package covidController;
 
 import Person.IPerson;
 
-public interface ICovidControllerCitizen extends ICovidController {
+public interface ICovidControllerCitizen {
   String queryMedicalAdvice();
 
   boolean queryTravelPermission();
 
   String checkTravelHistoory(IPerson person);
-  
+
 }
