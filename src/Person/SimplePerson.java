@@ -46,55 +46,58 @@ class Address {
 // To represent common attributes to monitor an individual
 public class SimplePerson implements IPerson {
   // Personal ID
-  long id;
+  private long id;
   // Name components
-  String last;
-  String first;
+  private String last;
+  private String first;
   // Passed cities in the past 2 weeks
-  ArrayList<Address> travelHistory;
+  private ArrayList<Address> travelHistory;
   // If have direct contact with confirmed/possible COVID-19 patient
-  boolean confirmed;
-  boolean possible;
+  private boolean confirmed;
   // List of current have/n't symptoms in sequence
-  /* - Cough
-   * - Fatigue
-   * - Fever
-   * - Myalgias
-   * - Loss of taste
-   * - Sore throat
-   * - Loss of smell
-   * - Diarrhea
-   * - Chills/sweats
-   * - Dyspnea
-   * - Temperature > 38 C
-   * - Headache
-   * - Nasal congestion
+  /*
+   * - Cough 
+   * - Fatigue 
+   * - Fever 
+   * - Myalgias 
+   * - Loss of taste 
+   * - Sore throat 
+   * - Loss of smell 
+   * - Diarrhea 
+   * - Chills/sweats 
+   * - Dyspnea 
+   * - Temperature > 38 C 
+   * - Headache 
+   * - Nasal congestion 
    * - Nonproductive cough
    */
-  ArrayList<Boolean> symptoms;
+  private ArrayList<Boolean> symptoms;
   // Current states
-  // Vaccination statue (n - None, 1 - one dose, f - fully vaccinated)
-  char vaccFlag;
+  // If the person is fully vaccinated
+  private boolean fullVacc;
   // Under quarantine or not
-  boolean quarantine;
+  private boolean quarantine;
   // Covid-19 test result in the past 5 days (Positive/Negative, NULL)
-  boolean testResult;
+  private boolean testResult;
   // Physical attributes
+  // String HealthCondition;
   // float BMI;
-  int age;
+  private int age;
+
   // True - male, False - female
-  boolean gender;
+  private boolean gender;
 
   // The constructor
   SimplePerson(long id, String last, String first, ArrayList<Address> travelHistory,
-      ArrayList<Boolean> symptoms, char vaccFlag, boolean quarantine, boolean testResult, int age,
-      boolean gender) {
+      boolean confirmed, ArrayList<Boolean> symptoms, boolean fullVacc, boolean quarantine,
+      boolean testResult, int age, boolean gender) {
     this.id = id;
     this.last = last;
     this.first = first;
     this.travelHistory = travelHistory;
+    this.confirmed = confirmed;
     this.symptoms = symptoms;
-    this.vaccFlag = vaccFlag;
+    this.fullVacc = fullVacc;
     this.quarantine = quarantine;
     this.testResult = testResult;
     this.age = age;
@@ -119,14 +122,10 @@ public class SimplePerson implements IPerson {
   public ArrayList<Address> getTravelHistory() {
     return this.travelHistory;
   }
-  
-  // If the person had contact with confirmed/possible patient
+
+  // If the person had contact with confirmed patient
   public boolean isConfirmed() {
     return this.confirmed;
-  }
-  
-  public boolean isPossible() {
-    return this.possible;
   }
 
   // Get list of current have/n't symptoms
@@ -136,8 +135,8 @@ public class SimplePerson implements IPerson {
 
   // Current states
   // Get vaccination statue (n - None, 1 - one dose, f - fully vaccinated)
-  public char getVaccFlag() {
-    return this.vaccFlag;
+  public boolean isFullyVaccinated() {
+    return this.fullVacc;
   }
 
   // Get under quarantine or not
@@ -163,7 +162,7 @@ public class SimplePerson implements IPerson {
   }
 
   // Update the traveled city list by time
-  void updateTrip() {
+  public void updateHistory() {
     for (int i = 0; i < this.travelHistory.size(); i++) {
       Address curr = this.travelHistory.get(i);
       if (curr.leave != null) {
@@ -175,9 +174,41 @@ public class SimplePerson implements IPerson {
       }
     }
   }
-  
-  // Get the possibility of Covid-19 diagnosis result
-  double getDiagnosis() {
-    return 0;
+
+  // Get the possibility of Covid-19 diagnosis result [Bayes]
+  public double getDiagnosis() {
+    // Positive result from Naive Baysian
+    double pos;
+    // Negative result from Naive Baysian
+    double neg;
+    
+    if (confirmed) {
+      pos = Reference.PR_POS_CONFIRM;
+      neg = Reference.PR_NEG_CONFIRM;
+    }
+    else {
+      pos = Reference.PR_POS_POSSIBLE;
+      neg = Reference.PR_NEG_POSSIBLE;
+    }
+    
+    for (int i = 0; i < this.symptoms.size(); i++) {
+      if (this.symptoms.get(i)) {
+        pos *= Reference.PR_POS_SYMPTOMS.get(i);
+        neg *= 1 - Reference.PR_NEG_SYMPTOMS.get(i);
+      }
+      else {
+        pos *= 1 - Reference.PR_POS_SYMPTOMS.get(i);
+        neg *= Reference.PR_NEG_SYMPTOMS.get(i);
+      }
+    }
+    
+    double initialDiagnosis = pos / (pos + neg);
+    
+    if (this.fullVacc) {
+      return (1 - Reference.VACC_EFFICIENCY) * initialDiagnosis;
+    }
+    else {
+      return initialDiagnosis;
+    }
   }
 }
