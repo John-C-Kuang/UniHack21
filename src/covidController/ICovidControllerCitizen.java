@@ -1,12 +1,13 @@
 package covidController;
 
-import Person.IPerson;
+public interface ICovidControllerCitizen extends ICovidController {
+  String queryPersonalInformation();
 
-public interface ICovidControllerCitizen {
-  String queryMedicalAdvice();
+  String queryTravelHistory();
 
-  boolean queryTravelPermission();
+  String queryAdvice();
 
-  String checkTravelHistoory(IPerson person);
+  String queryPermission();
 
+  void registerInformation(String str);
 }
