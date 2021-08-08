@@ -68,6 +68,6 @@ public class SimpleCovidModelCitizen implements ICovidModelCitizen {
   }
 
   public void updatePr() {
-    this.person.getDiagnosis();
+    probability = this.person.getDiagnosis();
   }
 }

@@ -2,30 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24f9f5a8-5719-4db2-90a6-a42a672d1bbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_8_7_21__5_22_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UniHack21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UniHack21.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/GUITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/GUITest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/IPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/Reference.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/Reference.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Person/SimplePerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Person/SimplePerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/AbstractRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/AbstractRegion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/EContainmentApproach.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/EContainmentApproach.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/IRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/IRegion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/Region/SimpleRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/Region/SimpleRegion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/WritePersonToFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/WritePersonToFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerCitizen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/ICovidControllerGovernment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/SimpleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/SimpleCovidControllerCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/SimpleCovidControllerCitizen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidController/SimpleCovidControllerGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidController/SimpleCovidControllerGovernment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelCitizen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/ICovidModelGovernment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelCitizen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/covidModel/SimpleCovidModelGovernment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/gov/IGovernmentGUIView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/gov/IGovernmentGUIView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/gov/SimpleGovernmentGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/user/IUserGUiView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/user/IUserGUiView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UniHack21/view/user/SimpleUserGUIView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UniHack21/view/user/SimpleUserGUIView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person/SimplePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/SimplePerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/covidController/ICovidControllerGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/ICovidControllerGovernment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerGovernment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelGovernment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelGovernment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/IGovernmentGUIView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gov/SimpleGovernmentGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/ICovidControllerCitizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidController/SimpleCovidControllerCitizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/covidModel/SimpleCovidModelCitizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/user/IUserGUiView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user/IUserGUiView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user/SimpleUserGUIView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +99,7 @@
       <updated>1628345099988</updated>
       <workItem from="1628345102374" duration="7364000" />
       <workItem from="1628358799103" duration="297000" />
+      <workItem from="1628390590891" duration="162000" />
     </task>
     <servers />
   </component>
@@ -104,5 +117,32 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/covidController/SimpleCovidControllerCitizen.java</url>
+          <line>17</line>
+          <properties field="pr" class="covidController.SimpleCovidControllerCitizen" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/covidModel/SimpleCovidModelCitizen.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/covidModel/SimpleCovidModelCitizen.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/covidModel/SimpleCovidModelCitizen.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

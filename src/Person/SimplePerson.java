@@ -1,6 +1,7 @@
 package Person;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -104,6 +105,7 @@ public class SimplePerson implements IPerson {
 
   // Get under quarantine or not
   public boolean isQuarantine() {
+
     return this.quarantine;
   }
 
@@ -142,12 +144,7 @@ public class SimplePerson implements IPerson {
   }
   // Change if current quarantine status
   public void setQuarantine() {
-    if (this.quarantine) {
-      this.quarantine = false;
-    }
-    else {
-      this.quarantine = true;
-    }
+    this.quarantine = !this.quarantine;
   }
   // Change if the person received Covid-19 test result
   public void setResult(boolean result) {
@@ -170,36 +167,15 @@ public class SimplePerson implements IPerson {
 
   // Get the possibility of Covid-19 diagnosis result [Bayes]
   public double getDiagnosis() {
-    // Positive result from Naive Baysian
-    double pos;
-    // Negative result from Naive Baysian
-    double neg;
-
-    if (confirmed) {
-      pos = Reference.PR_POS_CONFIRM;
-      neg = Reference.PR_NEG_CONFIRM;
-    } else {
-      pos = Reference.PR_POS_POSSIBLE;
-      neg = Reference.PR_NEG_POSSIBLE;
-    }
-
-    for (int i = 0; i < this.symptoms.size(); i++) {
-      if (this.symptoms.get(i)) {
-        pos *= Reference.PR_POS_SYMPTOMS.get(i);
-        neg *= 1 - Reference.PR_NEG_SYMPTOMS.get(i);
-      } else {
-        pos *= 1 - Reference.PR_POS_SYMPTOMS.get(i);
-        neg *= Reference.PR_NEG_SYMPTOMS.get(i);
-      }
-    }
-
-    double initialDiagnosis = pos / (pos + neg);
-
     if (this.fullVacc) {
-      return (1 - Reference.VACC_EFFICIENCY) * initialDiagnosis;
-    } else {
-      return initialDiagnosis;
+      return 0.0;
     }
+
+    if (this.confirmed) {
+      return 0.8;
+    }
+
+    return count(symptoms, true) / (double) symptoms.size();
   }
 
   @Override
@@ -228,5 +204,17 @@ public class SimplePerson implements IPerson {
 
   public String travelHistoryToString() {
     return "Name: " + getFirstname() + getLastname() + "Travel History: " + printArrList(getTravelHistory()) + "\n";
+  }
+
+  private int count(List<Boolean> list, boolean b) {
+    int k = 0;
+
+    for (boolean b1 : list) {
+      if (b1 == b) {
+        k = k + 1;
+      }
+    }
+
+    return k;
   }
 }
